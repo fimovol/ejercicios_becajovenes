@@ -18,26 +18,34 @@
             <ul>
                 <li>
                     <a href="sesion13-10ejercicios.html">
-                        <p>
-                            sesión 13, 10 ejercicios
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="sesion13.html">
-                        <p>sesión 13 tarea</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="sesion14.html">
-                        <p>sesión 14 tarea</p>
+                        <p>volver</p>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    
+    <main class="container">
+        <h1>primer ejercicio</h1>
+        <p id="hombres"></p>
+        <p id="mujeres"></p>
+    </main>
     <aside></aside>
     <footer></footer>
 </body>
+<script>
+    let hombres = prompt("cual es el numero de hombres que hay en el grupo")
+    let mujeres = prompt("cual es el numero de mujeres que hay en el grupo")
+
+    hombres = parseFloat(hombres)
+    mujeres = parseFloat(mujeres)
+
+    el_100_porciento = hombres + mujeres
+
+    porcentaje_hombres = (hombres/el_100_porciento)*100
+    porcentaje_mujeres = (mujeres/el_100_porciento)*100
+
+    document.getElementById("hombres").innerText = `el porcentaje de hombres es de ${porcentaje_hombres}%`
+    document.getElementById("mujeres").innerText = `el porcentaje de mujeres es de ${porcentaje_mujeres}%`
+</script>
 </html>

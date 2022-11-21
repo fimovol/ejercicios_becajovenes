@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="presentando todos los ejercicios en un solo lugar">
+    <link rel="shortcut icon" href="img/f.png" type="image/x-icon">
+    <meta name="google" content="notranslate">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>ejercicios</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="sesion13-10ejercicios.html">
+                        <p>volver</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h1></h1>
+        <p id="_1"></p>
+        <p id="_2"></p>
+        <p id="_3"></p>
+        <p id="_4"></p>
+        <p id="_5"></p>
+    </main>
+    <aside></aside>
+    <footer></footer>
+</body>
+<script>
+    let monto_inversion = prompt("ingresar un monto de inversión en soles")
+
+    monto_inversion = parseFloat(monto_inversion)
+
+    let avenida_la_mar = monto_inversion*0.35
+    let avenida_abancay = monto_inversion*0.25
+    let avenida_28_de_julio = monto_inversion*0.10
+    let avenida_aviacion = monto_inversion*0.15
+    let avenida_tacna = monto_inversion*0.15
+
+    document.getElementById("_1").innerText = ` Avenida La Mar - 35% del monto es : ${avenida_la_mar} soles`
+    document.getElementById("_2").innerText = `Avenida Abancay - 25% del monto es : ${avenida_abancay} soles`
+    document.getElementById("_3").innerText = `Avenida 28 de Julio - 10% del monto  es : ${avenida_28_de_julio} soles`
+    document.getElementById("_4").innerText = `Avenida Aviación - 15% del monto es : ${avenida_aviacion} soles`
+    document.getElementById("_5").innerText = `venida Tacna - restante del monto es : ${avenida_tacna} soles`
+
+</script>
+</html>
