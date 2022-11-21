@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="presentando todos los ejercicios en un solo lugar">
+    <link rel="shortcut icon" href="img/f.png" type="image/x-icon">
+    <meta name="google" content="notranslate">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>ejercicios</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <p>volver</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h1>esta es la sesion 16 con todos sus ejercicios</h1>
+        <h2> multiplicar, dividir, suamar y restar</h2>
+        <p>escribir en los campos de texto numeros, y selecciona la operacion que quieras luego preciona calcular</p>
+        <form action="">
+            <label for="_1_numero_1">primer numero</label>
+            <input type="number" id="_1_numero_1" name="_1_numero_1">
+
+            <label for="_1_operacion">operacion</label>
+            <select name="_1_operacion" id="_1_operacion">
+                <option value="sumar" >sumar</option>
+                <option value="restar">restar</option>
+                <option value="dividir">dividir</option>
+                <option value="multiplicar">multiplicar</option>
+            </select>
+
+            <label for="_1_numero_2">segundo numero</label>
+            <input type="number" id="_1_numero_2" name="_1_numero_2">
+
+            <input type="button" value="calcular" id="_1_boton">
+
+            <p id="_1_1"></p>
+        </form>
+        <h2>pasar de farenheit a celcius y de celcius a farenheit</h2>
+        <p>escribe una temperatura en grados o en farenheit para obtener el resultado</p>
+        <form action="">
+            <label for="_2_grados">ingresa un numero</label>
+            <input type="text" id="_2_grados" name="_2_grados">
+
+            <select name="_2_operacion" id="_2_operacion">
+                <option value="sumar" >celcius</option>
+                <option value="restar">farenheit</option>
+            </select>
+
+            <input type="button" value="calcular" id="_2_boton">
+
+            <p id="_2_1"></p>
+        </form>
+    </main>
+    <aside></aside>
+    <footer></footer>
+</body>
+<script src="js/sesion16.js"></script>
+</html>
